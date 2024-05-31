@@ -30,22 +30,22 @@ from dotenv import load_dotenv
 load_dotenv("config.env")
 
 ALIVE_EMOJI = getenv("ALIVE_EMOJI", "🥵")
-ALIVE_LOGO = getenv("ALIVE_LOGO", "https://graph.org/file/fafad2a1b5ccf521c2adc.png")
+ALIVE_LOGO = getenv("ALIVE_LOGO", "https://graph.org/file/bd5a086516e474eb4757c.jpg")
 PM_PIC = getenv("PM_PIC", "https://graph.org/file/fafad2a1b5ccf521c2adc.png")
 ALIVE_TEKS_CUSTOM = getenv("ALIVE_TEKS_CUSTOM", "Hey, I am alive.")
-API_HASH = getenv("API_HASH", "a35853e36b82fa1ea0ea3e6109ef8cdd")
-API_ID = getenv("API_ID", "16665944")
+API_HASH = getenv("API_HASH", "eb10c125d96d2146dc893b744470cea4")
+API_ID = getenv("API_ID", "24547299")
 BOTLOG_CHATID = int(getenv("BOTLOG_CHATID") or 0)
 BOT_VER = "4.0.0@main"
 BRANCH = getenv("BRANCH", "main") #don't change this line 
 CMD_HNDLR = cmd
 BOT_TOKEN = getenv("BOT_TOKEN", "none")
 OPENAI_API_KEY = getenv("OPENAI_API_KEY", "")
-CHANNEL = getenv("CHANNEL", "Seethistoknow")
+CHANNEL = getenv("CHANNEL", "anokhikeduniya")
 CMD_HANDLER = getenv("CMD_HANDLER", ".")
 DB_URL = getenv("DATABASE_URL", "")
 GIT_TOKEN = getenv("GIT_TOKEN", "")
-GROUP = getenv("GROUP", "Mrpasserby_1227")
+GROUP = getenv("GROUP", "anokhikeduniya")
 HEROKU_API_KEY = getenv("HEROKU_API_KEY")
 HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
 PMPERMIT_PIC = getenv("PMPERMIT_PIC", None)
