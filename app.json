@@ -1,6 +1,6 @@
 {
-  "name": "Shubh-X-Userbot",
-  "description": "[Japanese-X-Userbot] ᴡᴏʀʟᴅ'ꜱ ʟᴀʀɢᴇꜱᴛ ᴀɴᴅ ꜰᴀꜱᴛᴇꜱᴛ ᴜꜱᴇʀʙᴏᴛ. ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴊᴀᴘᴀɴᴇꜱᴇ-x-ᴜꜱᴇʀʙᴏᴛ.",
+  "name": "Simple-X-Userbot",
+  "description": "[simple-X-Userbot] ᴡᴏʀʟᴅ'ꜱ ʟᴀʀɢᴇꜱᴛ ᴀɴᴅ ꜰᴀꜱᴛᴇꜱᴛ ᴜꜱᴇʀʙᴏᴛ. ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴊᴀᴘᴀɴᴇꜱᴇ-x-ᴜꜱᴇʀʙᴏᴛ.",
   "logo": "https://graph.org/file/ec99cb6dba229bd984537.jpg",
   "stack": "heroku-22",
   "env": {
