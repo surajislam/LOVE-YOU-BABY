@@ -33,7 +33,7 @@
 # ©2023 Geez | Ram Team
 
 
-#REMAKE BY NOBITA XD AND TRYTOLIVEALONE 
+#REMAKE BY SIMPLE AND SURAJ
 
 
 
@@ -49,12 +49,12 @@ from config import OWNER_ID as owner
 @app.on_callback_query()
 def pmowner(client, callback_query):
     user_id = owner
-    message = "A Pᴏᴡᴇʀғᴜʟ Assɪᴛᴀɴᴛ 𝐉𝐀𝐏𝐀𝐍𝐄𝐒𝐄 𝐗 𝐔𝐒𝐄𝐑𝐁𝐎𝐓!!!!"
+    message = "A Pᴏᴡᴇʀғᴜʟ Assɪᴛᴀɴᴛ SIMPLE 𝐗 𝐔𝐒𝐄𝐑𝐁𝐎𝐓!!!!"
     client.send_message(user_id, message)
     client.answer_callback_query(callback_query.id, text="Message sent")
 
 logoX = [
-    "https://graph.org/file/fafad2a1b5ccf521c2adc.png"
+    "1https://graph.org/file/bd5a086516e474eb4757c.jpg"
 ]
 
 alive_logo = random.choice(logoX)
@@ -63,13 +63,13 @@ alive_logo = random.choice(logoX)
 async def start(app, message):
     chat_id = message.chat.id
     file_id = alive_logo
-    caption = "Hello, Mʏ Mᴀsᴛᴇʀ!!\nNice To Meet You 🤗 !!\nI guess, that you know me, Uhh you don't, np..\nWell.\n\nA Pᴏᴡᴇʀғᴜʟ Assɪᴛᴀɴᴛ \n\n Pᴏᴡᴇʀᴇᴅ Bʏ [𝐒𝐇𝐔𝐁𝐇 𝐗 𝐔𝐒𝐄𝐑𝐁𝐎𝐓](t.me/Mrpasserby_1227)\n\nYᴏᴜ Cᴀɴ Cʜᴀᴛ Wɪᴛʜ Mʏ Mᴀsᴛᴇʀ Tʜʀᴏᴜɢʜ Tʜɪs Bᴏᴛ.\nIғ Yᴏᴜ Wᴀɴᴛ Yᴏᴜʀ Oᴡɴ Assɪᴛᴀɴᴛ Yᴏᴜ Cᴀɴ Dᴇᴘʟᴏʏ Fʀᴏᴍ Bᴜᴛᴛᴏɴ Bᴇʟᴏᴡ."
+    caption = "Hello, Mʏ Mᴀsᴛᴇʀ!!\nNice To Meet You 🤗 !!\nI guess, that you know me, Uhh you don't, np..\nWell.\n\nA Pᴏᴡᴇʀғᴜʟ Assɪᴛᴀɴᴛ \n\n Pᴏᴡᴇʀᴇᴅ Bʏ [SIMPLE 𝐗 𝐔𝐒𝐄𝐑𝐁𝐎𝐓](t.me/Mrpasserby_1227)\n\nYᴏᴜ Cᴀɴ Cʜᴀᴛ Wɪᴛʜ Mʏ Mᴀsᴛᴇʀ Tʜʀᴏᴜɢʜ Tʜɪs Bᴏᴛ.\nIғ Yᴏᴜ Wᴀɴᴛ Yᴏᴜʀ Oᴡɴ Assɪᴛᴀɴᴛ Yᴏᴜ Cᴀɴ Dᴇᴘʟᴏʏ Fʀᴏᴍ Bᴜᴛᴛᴏɴ Bᴇʟᴏᴡ."
     reply_markup = InlineKeyboardMarkup([
         [
-            InlineKeyboardButton("𝐒𝐮𝐩𝐩𝐨𝐫𝐭", url="https://t.me/Mrpasserby_1227"),
-            InlineKeyboardButton("𝐂𝐡𝐚𝐧𝐧𝐞𝐥", url="https://t.me/Seethistoknow"),
-            InlineKeyboardButton("𝐎𝐰𝐧𝐞𝐫", url="https://t.me/Mrshubh_1227"),
-            InlineKeyboardButton("𝐑𝐞𝐩𝐨", url="https://github.com/Shubhxspam/Japanese-X-Userbot"),
+            InlineKeyboardButton("𝐒𝐮𝐩𝐩𝐨𝐫𝐭", url="https://t.me/anokhikeduniya"),
+            InlineKeyboardButton("𝐂𝐡𝐚𝐧𝐧𝐞𝐥", url="https://t.me/anokhikeduniya"),
+            InlineKeyboardButton("𝐎𝐰𝐧𝐞𝐫", url="https://t.me/II_SB_SIMPLE_II"),
+            InlineKeyboardButton("𝐑𝐞𝐩𝐨", url="https://graph.org/file/bd5a086516e474eb4757c.jpg"),
         ],
     ])
 
