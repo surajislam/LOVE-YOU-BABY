@@ -141,7 +141,7 @@ async def create_botlog(client):
     LOGGER("X").info(
         "WAIT A MOMENT MASTER. CURRENTLY CREATING A USERBOT LOG GROUP FOR YOU"
     )
-    desc = "Group Log for Japanese-X-Userbot.\n\PLEASE DO NOT LEAVE THE GROUP INI.\n\nPowered By ~ @Mrpasserby_1227 ❤️"
+    desc = "Group Log for Japanese-X-Userbot.\n\PLEASE DO NOT LEAVE THE GROUP INI.\n\nPowered By ~ @simpleboytestinggroupp ❤️"
     try:
         photo = "X/resources/logo.jpg"
         gruplog = await client.create_supergroup("Shubh-X-Userbot Logs", desc)
