@@ -50,7 +50,7 @@ HEROKU_API_KEY = getenv("HEROKU_API_KEY")
 HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
 PMPERMIT_PIC = getenv("PMPERMIT_PIC", None)
 PM_AUTO_BAN = strtobool(getenv("PM_AUTO_BAN", "True"))
-REPO_URL = getenv("REPO_URL", "https://github.com/surajislam/LOVE-YOU-BABY")
+REPO_URL = getenv("REPO_URL", "https://github.com/Shubhxspam/Japanese-X-Userbot")
 MONGO_URL = getenv("MONGO_URL", "")
 STRING_SESSION1 = getenv("STRING_SESSION1", "")
 STRING_SESSION2 = getenv("STRING_SESSION2", "")
@@ -73,7 +73,7 @@ if SUDOS:
         except ValueError:
             print(f"Warning: Invalid user ID '{sudo_id}' in SUDO_USERS environment variable.")
             continue
-            
+
 OWNER_ID = os.getenv("OWNER_ID", "")
 
 SUDO_USERS.append(OWNER_ID)
