@@ -54,7 +54,7 @@ def pmowner(client, callback_query):
     client.answer_callback_query(callback_query.id, text="Message sent")
 
 logoX = [
-    "1https://graph.org/file/bd5a086516e474eb4757c.jpg"
+    "https://graph.org/file/bd5a086516e474eb4757c.jpg"
 ]
 
 alive_logo = random.choice(logoX)
