@@ -1,24 +1,24 @@
-#MIT License
+MIT License
 
-#Copyright (c) 2024 Japanese-X-Userbot
+Copyright (c) 2024 Japanese-X-Userbot
 
-#Permission is hereby granted, free of charge, to any person obtaining a copy
-#of this software and associated documentation files (the "Software"), to deal
-#in the Software without restriction, including without limitation the rights
-#to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-#copies of the Software, and to permit persons to whom the Software is
-#furnished to do so, subject to the following conditions:
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-#The above copyright notice and this permission notice shall be included in all
-#copies or substantial portions of the Software.
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 
-#THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-#IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-#FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-#AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-#LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-#OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-#SOFTWARE.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
 
 from enum import IntEnum, unique
 
@@ -77,17 +77,17 @@ def get_message_type(msg):
         content = msg.animation.file_id
         message_type = Types.ANIMATION
 
-    # TODO
-    # elif msg.contact:
-    # 	content = msg.contact.phone_number
-    # 	# text = None
-    # 	message_type = Types.CONTACT
+     TODO
+     elif msg.contact:
+    	content = msg.contact.phone_number
+     text = None
+     	message_type = Types.CONTACT
 
-    # TODO
-    # elif msg.animated_sticker:
-    # 	content = msg.animation.file_id
-    # 	text = None
-    # 	message_type = Types.ANIMATED_STICKER
+     TODO
+     elif msg.animated_sticker:
+     	content = msg.animation.file_id
+     	text = None
+     	message_type = Types.ANIMATED_STICKER
 
     else:
         return None, None
@@ -107,7 +107,7 @@ def get_note_type(msg):
     args = raw_text.split(None, 2)  # use python's maxsplit to separate cmd and args
     note_name = args[1]
 
-    # determine what the contents of the filter are - text, image, sticker, etc
+     determine what the contents of the filter are - text, image, sticker, etc
     if len(args) >= 3:
         text = args[2]
         data_type = Types.TEXT
@@ -158,17 +158,17 @@ def get_note_type(msg):
             # text = None
             data_type = Types.ANIMATION
 
-    # TODO
-    # elif msg.reply_to_message.contact:
-    # 	content = msg.reply_to_message.contact.phone_number
-    # 	# text = None
-    # 	data_type = Types.CONTACT
+     TODO
+     elif msg.reply_to_message.contact:
+     	content = msg.reply_to_message.contact.phone_number
+     	 text = None
+     	data_type = Types.CONTACT
 
-    # TODO
-    # elif msg.reply_to_message.animated_sticker:
-    # 	content = msg.reply_to_message.animation.file_id
-    # 	text = None
-    # 	data_type = Types.ANIMATED_STICKER
+     TODO
+     elif msg.reply_to_message.animated_sticker:
+     	content = msg.reply_to_message.animation.file_id
+     	text = None
+     	data_type = Types.ANIMATED_STICKER
 
     else:
         return None, None, None, None
@@ -209,16 +209,16 @@ def get_welcome_type(msg):
             else:
                 data_type = Types.DOCUMENT
             content = msg.reply_to_message.document.file_id
-        # text = msg.reply_to_message.caption
+         text = msg.reply_to_message.caption
 
         elif msg.reply_to_message.photo:
             content = msg.reply_to_message.photo[-1].file_id  # last elem = best quality
-            # text = msg.reply_to_message.caption
+             text = msg.reply_to_message.caption
             data_type = Types.PHOTO
 
         elif msg.reply_to_message.audio:
             content = msg.reply_to_message.audio.file_id
-            # text = msg.reply_to_message.caption
+             text = msg.reply_to_message.caption
             data_type = Types.AUDIO
 
         elif msg.reply_to_message.voice:
@@ -228,7 +228,7 @@ def get_welcome_type(msg):
 
         elif msg.reply_to_message.video:
             content = msg.reply_to_message.video.file_id
-            # text = msg.reply_to_message.caption
+             text = msg.reply_to_message.caption
             data_type = Types.VIDEO
 
         elif msg.reply_to_message.video_note:
@@ -238,14 +238,14 @@ def get_welcome_type(msg):
 
         elif msg.reply_to_message.animation:
             content = msg.reply_to_message.animation.file_id
-            # text = None
+             text = None
             data_type = Types.ANIMATION
 
-    # TODO
-    # elif msg.reply_to_message.animated_sticker:
-    # 	content = msg.reply_to_message.animation.file_id
-    # 	text = None
-    # 	data_type = Types.ANIMATED_STICKER
+     TODO
+     elif msg.reply_to_message.animated_sticker:
+     	content = msg.reply_to_message.animation.file_id
+     	text = None
+     	data_type = Types.ANIMATED_STICKER
 
     else:
         if msg.caption:
