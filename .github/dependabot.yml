@@ -11,6 +11,6 @@ updates:
   open-pull-requests-limit: 50
   ignore:
     - dependency-name: "python-telegram-bot"
-    # Ignoring all ptb updates
+     Ignoring all ptb updates
     - dependency-name: "sqlalchemy"
-    # Ignoring all sqlalchemy updates
+     Ignoring all sqlalchemy updates
