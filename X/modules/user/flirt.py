@@ -1,6 +1,3 @@
-#MIT License
-
-#Copyright (c) 202import asyncio
 from random import choice
 from pyrogram.types import Message
 from pyrogram import filters, Client
