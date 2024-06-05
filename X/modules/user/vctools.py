@@ -1,6 +1,3 @@
-#MIT License
-
-#Copyright (c) 2024 Japanefrom asyncio import sleep
 from contextlib import suppress
 from random import randint
 from typing import Optional
