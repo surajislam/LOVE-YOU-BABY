@@ -1,5 +1,5 @@
 
-kexx (⌯ Kᴜɴᴀʟ࿐ 🕊)
+#kexx (⌯ Simple࿐ 🕊)
 
 MASTERS = [6694740726]
 
