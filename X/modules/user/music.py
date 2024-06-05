@@ -31,14 +31,14 @@ async def send_music(bot: Client, message: Message):
         song_results = await bot.get_inline_bot_results("deezermusicbot", song_name)
 
         try:
-            # send to Saved Messages because hide_via doesn't work sometimes
+             send to Saved Messages because hide_via doesn't work sometimes
             saved = await bot.send_inline_bot_result(
                 chat_id="me",
                 query_id=song_results.query_id,
                 result_id=song_results.results[0].id,
             )
 
-            # forward as a new message from Saved Messages
+             forward as a new message from Saved Messages
             saved = await bot.get_messages("me", int(saved.updates[1].message.id))
             reply_to = (
                 message.reply_to_message.id
@@ -51,7 +51,7 @@ async def send_music(bot: Client, message: Message):
                 reply_to_message_id=ReplyCheck(message),
             )
 
-            # delete the message from Saved Messages
+             delete the message from Saved Messages
             await bot.delete_messages("me", saved.id)
         except TimeoutError:
             await message.edit("Tʜᴀᴛ ᴅɪᴅɴ'ᴛ ᴡᴏʀᴋ ᴏᴜᴛ")
